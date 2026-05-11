@@ -1,0 +1,307 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: beige;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: 'KM';
+  src: url(./fonts/cause.ttf);
+}
+
+@font-face {
+  font-family: 'SingleDay';
+  src: url(./fonts/singleday.ttf);
+}
+
+main{
+    padding: 1em;
+}
+
+
+
+nav{
+    background: #5b81b0;
+    display: flex;
+    flex-direction: row;
+    padding: 1em;
+    justify-content: space-around;
+    font-family: 'KM', sans-serif;
+    width: 100%;
+    }
+
+
+p{
+    font-family: 'KM', sans-serif;
+    color: #5b81b0;
+    font-size: 20px;
+}
+
+h1, h2{
+    font-family: 'SingleDay', sans-serif;
+    color: #1e416b;
+    font-size: 40px;
+    text-align: center;
+
+}
+
+
+a{
+    color: #5b81b0;
+    font-size: 30px;
+    margin: 0.5em;
+    padding: 0.5em;
+    border-radius: 10px;
+    font-family: 'SingleDay', sans-serif;
+}
+a:link{
+    color: lightblue;
+}
+a:visited {
+    color: gold;
+}
+a:hover{
+    background-color: floralwhite;
+    color:darkgoldenrod;
+}
+a:active{
+    background-color: gold;
+}
+
+a.selected{
+    background-color: floralwhite;
+    color:darkgoldenrod;
+}
+
+
+#output{
+    display: flex;
+    justify-content: space-around;
+    gap: 80px;
+    padding: 10px;
+    background-color: lightblue;
+    width: 100%;
+    font-family: 'KM', sans-serif;
+    color: saddlebrown;
+
+}
+
+.home-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1em;
+    max-width: 80em;
+    margin: 0 auto;
+}
+
+.group{
+    background: #f2e4c2;
+    border-radius: 10px;
+    padding: 1em;
+    padding-bottom: 1em;
+}
+
+.group img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+
+
+
+    
+.food-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1em;
+    max-width: 100em;
+    margin: 0 auto;
+}
+
+.blog{
+    background: #f2e4c2;
+    border-radius: 10px;
+    padding: 1em;
+    padding-bottom: 1em;
+}
+
+.blog img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.blog > p {
+    margin-top: 0;
+    margin-bottom: 0;
+    color: #5b81b0;
+}
+
+
+
+
+
+.thoughts-container{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1em;
+    max-width: 80em;
+    margin: 0 auto;
+
+}
+
+
+
+label {
+  font-weight: bold;
+  font-family:"KM", sans-serif;
+  color: darkgoldenrod;
+}
+
+
+select,
+textarea,
+input[type="file"],
+input[type="submit"] {
+  font-family:"KM", sans-serif;
+  font-size: 1em;
+  padding: 0.5em;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  width: 100%;
+}
+
+textarea {
+  resize: vertical;
+}
+
+input[type="submit"] {
+  background-color: #5b81b0;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background 0.5s ease;
+}
+
+input[type="submit"]:hover {
+  background-color: goldenrod;
+}
+
+.media-section{
+    background-color: #a9bbc9;
+    border-radius: 10px;
+    padding: 1em;
+}
+
+video {
+  width: 20%;
+  height: auto;
+  border-radius: 10px;
+}
+
+#clinton{
+    border-radius: 10px;
+    padding-left: 1em;
+    
+}
+
+
+
+@media only screen and (max-width: 600px){
+    .home-container{
+        grid-template-columns: 1fr;
+        flex-direction: column;
+    }
+
+    .food-container{
+        grid-template-columns: 1fr;
+        flex-direction: column;
+    }
+
+    nav{
+    display: flex;
+    flex-direction: column;
+    padding: 0.5em;
+    justify-content: space-around;
+    font-family: 'KM', sans-serif;
+    width: 100%;
+    }
+
+    video{
+    width: 100%;
+    }
+
+}
+
+
+
+
+
+
+footer{
+    padding: 1em;
+}
+
+
+
+
+
+
+
+.interactive-panel {
+  padding: 1em;
+  background: whitesmoke;
+  border-radius: 10px;
+  text-align: center;
+  margin-bottom: 1em;
+}
+
+.interactive-buttons {
+  display: flex;
+  justify-content: center;
+    }
+
+
+.interactive-panel h2 {
+  font-size: 2em;
+  margin-top: 0;
+}
+
+.interactive-panel button {
+  font-family: 'SingleDay', sans-serif;;
+  font-size: 1em;
+  padding: 0.7em 1em;
+  border: 0;
+  border-radius: 10px;
+  cursor: pointer;
+  background-color: #5b81b0;
+  color: floralwhite;
+}
+
+#book-message{
+    color: darkgoldenrod;
+    background-color: #f2e4c2;
+    padding: 0.7em 1em;
+    width: fit-content;
+    margin: 1em auto;
+    border-radius: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
